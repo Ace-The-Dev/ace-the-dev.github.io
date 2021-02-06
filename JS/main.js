@@ -1,0 +1,1 @@
+let myVariable = document.querySelectorAll("p");
