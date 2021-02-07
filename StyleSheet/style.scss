@@ -20,7 +20,7 @@ body {
     left: 24px;
     z-index: 10;
   }
-  section {
+  .banner {
     background-image: url("../images/banner-bg.jpg");
     background-position: center;
     background-size: cover;
@@ -28,7 +28,7 @@ body {
     width: 100%;
     p {
       position: absolute;
-      width: 325px;
+      width: 85%;
       height: 47px;
       left: 25px;
       top: 144px;
@@ -46,8 +46,9 @@ body {
       position: absolute;
       width: 81px;
       height: 29px;
-      left: 153px;
+      left: 50%;
       top: 256px;
+      transform: translateX(-50%);
       background: #4169e1;
       border-radius: 5px;
       font: {
