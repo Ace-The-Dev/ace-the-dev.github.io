@@ -10,7 +10,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   #myname {
     color: $gold;
     font-family: $lobster-Two;
@@ -71,15 +71,115 @@ body {
       background: rgba(0, 0, 0, 0.308);
     }
   }
-  h2 {
-    color: rgb(0, 0, 0);
-    font: {
-      size: 2.2rem;
-      family: $noto-sans;
-      weight: 700;
+
+  #section-projects {
+    h2 {
+      color: rgb(0, 0, 0);
+      font: {
+        size: 2rem;
+        family: $noto-sans;
+        weight: 700;
+        style: normal;
+      }
+      max-width: 72px;
+      margin: 0 auto 30px;
+      border-bottom: 1.5px solid $royal-blue;
     }
-    max-width: 72px;
-    margin: 0 auto;
-    border-bottom: 1.5px solid $royal-blue;
+    .project-grid {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 100px 100px;
+      .grid-item {
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .project1 {
+        background-image: url("../Images/cases/candyshop.png");
+      }
+      .project2 {
+        background-image: url("../Images/cases/contact.png");
+      }
+      .project3 {
+        background-image: url("../Images/cases/e-commerce.png");
+      }
+      .project4 {
+        background-image: url("../Images/cases/high-school1.png");
+      }
+      .project5 {
+        background-image: url("../Images/cases/highschool2.png");
+      }
+      .project6 {
+        background-image: url("../Images/cases/Musicapp.png");
+      }
+    }
+  }
+  #section-skills {
+    h2 {
+      color: rgb(0, 0, 0);
+      width: 97px;
+      margin: 0 auto 30px;
+      font: {
+        size: 2rem;
+        family: $noto-sans;
+        weight: 700;
+        style: normal;
+      }
+
+      &::after {
+        content: " ";
+        display: block;
+        height: 1.5px;
+        width: 70px;
+        background-color: $royal-blue;
+      }
+      //border-bottom: 1.5px solid $royal-blue;
+    }
+    p {
+      font-size: 1.7rem;
+    }
+    .box {
+      width: 80%;
+    }
+    .container {
+      background-color: $dark-dark;
+      width: 100%;
+      border-radius: 8px;
+    }
+    .skill {
+      background-color: $royal-blue;
+      color: white;
+      padding: 1%;
+      text-align: right;
+      font-size: 0.5rem;
+      height: 5px;
+      border-radius: 8px;
+    }
+    .html {
+      width: 80%;
+    }
+    .css {
+      width: 90%;
+    }
+    .sass {
+      width: 75%;
+    }
+    .js {
+      width: 40%;
+    }
+    .git {
+      width: 60%;
+    }
+    .ajax {
+      width: 80%;
+    }
+    .php {
+      width: 50%;
+    }
+    span {
+      font-size: 0.85rem;
+      float: right;
+    }
   }
 }
