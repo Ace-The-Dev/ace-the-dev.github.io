@@ -8,9 +8,54 @@
   width: 89%;
   margin: 0 auto;
 }
-
+html,
+body {
+  height: 100%;
+}
+#page-container {
+  min-height: 100%;
+}
+#main {
+  overflow: auto;
+  padding-bottom: 77px;
+}
 body {
   overflow-x: hidden;
+  h2 {
+    color: rgb(0, 0, 0);
+    width: 97px;
+    margin: 30px auto;
+    font: {
+      size: 2rem;
+      family: $noto-sans;
+      weight: 700;
+      style: normal;
+    }
+
+    &::after {
+      content: " ";
+      display: block;
+      height: 1.5px;
+      width: 70px;
+      background-color: $royal-blue;
+    }
+    //border-bottom: 1.5px solid $royal-blue;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  /*h2 {
+    color: rgb(0, 0, 0);
+    font: {
+      size: 2rem;
+      family: $noto-sans;
+      weight: 700;
+      style: normal;
+    }
+    max-width: 72px;
+    margin: 0 auto 30px;
+    border-bottom: 1.5px solid $royal-blue;
+  }*/
   #myname {
     color: $gold;
     font-family: $lobster-Two;
@@ -116,26 +161,6 @@ body {
     }
   }
   #section-skills {
-    h2 {
-      color: rgb(0, 0, 0);
-      width: 97px;
-      margin: 0 auto 30px;
-      font: {
-        size: 2rem;
-        family: $noto-sans;
-        weight: 700;
-        style: normal;
-      }
-
-      &::after {
-        content: " ";
-        display: block;
-        height: 1.5px;
-        width: 70px;
-        background-color: $royal-blue;
-      }
-      //border-bottom: 1.5px solid $royal-blue;
-    }
     p {
       font-size: 1.7rem;
     }
@@ -181,5 +206,18 @@ body {
       font-size: 0.85rem;
       float: right;
     }
+  }
+  #section-aboutme {
+    p {
+      text-align: center;
+    }
+  }
+  #footer {
+    position: relative;
+    width: 100%;
+    height: 77px;
+    background: #1c2d61;
+    margin-top: -77px;
+    clear: both;
   }
 }
