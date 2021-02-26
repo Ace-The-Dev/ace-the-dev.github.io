@@ -107,18 +107,6 @@ body {
   }
 
   #section-projects {
-    h2 {
-      color: rgb(0, 0, 0);
-      font: {
-        size: 2rem;
-        family: $noto-sans;
-        weight: 700;
-        style: normal;
-      }
-      max-width: 72px;
-      margin: 0 auto 30px;
-      border-bottom: 1.5px solid $royal-blue;
-    }
     .project-grid {
       display: grid;
       width: 100%;
