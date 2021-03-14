@@ -110,11 +110,15 @@ body {
     .project-grid {
       display: grid;
       width: 100%;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 100px 100px 100px;
-      .grid-item {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 120px 120px;
+      .grid-items {
         background-repeat: no-repeat;
         background-size: cover;
+        &:hover {
+          background-image: url(../images/banner-bg.jpg);
+          transition: all 3s;
+        }
       }
 
       .project1 {
@@ -159,7 +163,7 @@ body {
       color: white;
       padding: 1%;
       text-align: right;
-      font-size: 0.5rem;
+      font-size: 0.6rem;
       height: 5px;
       border-radius: 8px;
     }
@@ -185,7 +189,7 @@ body {
       width: 50%;
     }
     span {
-      font-size: 0.85rem;
+      font-size: 1rem;
       float: right;
     }
   }
