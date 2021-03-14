@@ -211,9 +211,9 @@ body {
     h2 {
       text-transform: capitalize;
       color: rgb(255, 255, 255);
-      width: 0;
+      width: auto;
       margin: 0;
-      display: inline;
+      display: block;
       font: {
         size: 2rem;
         family: $noto-sans;
@@ -232,15 +232,16 @@ body {
     .links {
       float: left;
       //margin-top: 12px;
+      margin-top: 30px;
     }
     .contact-details {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-family: $slabo-27;
       width: 140px;
       float: right;
       display: inline;
       text-align: right;
-      margin-top: 28px;
+      margin-top: px;
       //margin-right: 26px;
       text-transform: lowercase;
     }
