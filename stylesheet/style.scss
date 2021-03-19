@@ -109,6 +109,9 @@ body {
   #section-projects {
     p {
       text-align: center;
+      padding-bottom: 25px;
+      width:85%;
+      margin: 0 auto;
     }
     .project-container {
       display: grid;
@@ -135,7 +138,9 @@ body {
         .project-img {
           background-repeat: no-repeat;
           background-size: cover;
-          height: 169px;
+          width: 90%;
+          height:169px;
+          margin:0 auto;
 
           &:hover {
             background-image: url(../images/banner-bg.jpg);
