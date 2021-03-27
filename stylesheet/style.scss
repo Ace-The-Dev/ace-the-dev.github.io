@@ -125,13 +125,14 @@ body {
           a {
             font-size: 1.4rem;
             display: inline-block;
+            font-weight: 600;
             padding: 0 15px;
             height: 30px;
             border-radius: 6px;
             color: black;
             line-height: 30px;
             text-align: center;
-            background-color: khaki;
+            background-color: $gold;
             text-decoration: none;
           }
         }
@@ -143,37 +144,12 @@ body {
           margin: 0 auto;
 
           &:hover {
-            background-image: url(../images/banner-bg.jpg);
+            background-image: url("../images/banner-bg.jpg");
             transition: all 3s;
           }
         }
         .project1 {
           background-image: url("../images/cases/candyshop.png");
-          background-size: cover;
-          margin-bottom: 10px;
-        }
-        .project2 {
-          background-image: url("../images/cases/contact.png");
-          background-size: cover;
-          margin-bottom: 10px;
-        }
-        .project3 {
-          background-image: url("../images/cases/e-commerce.png");
-          background-size: cover;
-          margin-bottom: 10px;
-        }
-        .project4 {
-          background-image: url("../images/cases/high-school1.png");
-          background-size: cover;
-          margin-bottom: 10px;
-        }
-        .project5 {
-          background-image: url("../images/cases/highschool2.png");
-          background-size: cover;
-          margin-bottom: 10px;
-        }
-        .project6 {
-          background-image: url("../images/cases/Musicapp.png");
           background-size: cover;
           margin-bottom: 10px;
         }
@@ -274,15 +250,15 @@ body {
     .footer-sm {
       float: right;
       display: block;
-      margin-right: 30px;
+      margin-right: 10px;
       a {
         display: block;
-        padding-top: 5px;
+        padding-bottom: 8px;
       }
     }
     ul {
       float: left;
-      margin-left: 30px;
+      margin-left: 10px;
       li {
         list-style: none;
         padding-bottom: 15px;
