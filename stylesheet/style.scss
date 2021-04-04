@@ -11,6 +11,8 @@
 html,
 body {
   height: 100%;
+  color: #e8e6e3;
+  background-color: #181a1b;
 }
 #page-container {
   min-height: 100%;
@@ -26,6 +28,7 @@ body {
   }
   h2 {
     color: rgb(0, 0, 0);
+    color: #e8e6e3;
     width: 97px;
     margin: 30px auto;
     font: {
@@ -132,7 +135,7 @@ body {
             padding: 0 15px;
             height: 30px;
             border-radius: 6px;
-            color: black;
+            color: #000000;
             line-height: 30px;
             text-align: center;
             background-color: $gold;
