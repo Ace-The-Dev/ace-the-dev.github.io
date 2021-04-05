@@ -10,9 +10,6 @@
 }
 html {
   background-color: #181a1b;
-}
-html,
-body {
   height: 100%;
   color: #e8e6e3;
 }
@@ -27,6 +24,8 @@ body {
   display: none;
 }
 body {
+  color: #e8e6e3;
+  height: 100%;
   overflow-x: hidden;
   section {
     margin-bottom: 20px;
@@ -118,56 +117,6 @@ body {
     }
   }
 
-  #section-projects {
-    p {
-      text-align: center;
-      padding-bottom: 25px;
-      width: 85%;
-      margin: 0 auto;
-    }
-    .project-container {
-      display: grid;
-      width: 100%;
-
-      .project_description {
-        margin-bottom: 45px;
-        .projects-btn {
-          display: flex;
-          justify-content: space-around;
-          a {
-            font-size: 1.4rem;
-            display: inline-block;
-            font-weight: 600;
-            padding: 0 15px;
-            height: 30px;
-            border-radius: 6px;
-            color: #000000;
-            line-height: 30px;
-            text-align: center;
-            background-color: $gold;
-            text-decoration: none;
-          }
-        }
-        .project-img {
-          background-repeat: no-repeat;
-          background-size: cover;
-          width: 90%;
-          height: 169px;
-          margin: 0 auto;
-
-          &:hover {
-            background-image: url("../images/banner-bg.jpg");
-            transition: all 3s;
-          }
-        }
-        .project1 {
-          background-image: url("../images/cases/candyshop.png");
-          background-size: cover;
-          margin-bottom: 10px;
-        }
-      }
-    }
-  }
   #section-skills {
     height: 50vh;
     p {
@@ -225,6 +174,57 @@ body {
   #section-aboutme {
     p {
       text-align: center;
+    }
+  }
+  #section-projects {
+    display: block;
+    p {
+      text-align: center;
+      padding-bottom: 25px;
+      width: 85%;
+      margin: 0 auto;
+    }
+    .project-container {
+      display: grid;
+      width: 100%;
+
+      .project_description {
+        margin-bottom: 45px;
+        .projects-btn {
+          display: flex;
+          justify-content: space-around;
+          a {
+            font-size: 1.4rem;
+            display: inline-block;
+            font-weight: 600;
+            padding: 0 15px;
+            height: 30px;
+            border-radius: 6px;
+            color: #000000;
+            line-height: 30px;
+            text-align: center;
+            background-color: $gold;
+            text-decoration: none;
+          }
+        }
+        .project-img {
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 90%;
+          height: 169px;
+          margin: 0 auto;
+
+          &:hover {
+            background-image: url("../images/banner-bg.jpg");
+            transition: all 3s;
+          }
+        }
+        .project1 {
+          background-image: url("../images/cases/candyshop.png");
+          background-size: cover;
+          margin-bottom: 10px;
+        }
+      }
     }
   }
   #footer {
@@ -293,8 +293,9 @@ body {
     background-attachment: fixed;
   }
   body {
+    background-blend-mode: soft-light;
     .banner-title-name {
-      display: initial;
+      //display: initial;
       position: relative;
     }
     .intro {
@@ -304,7 +305,7 @@ body {
       font-size: 3.5rem;
     }
     .banner {
-      background-image: none;
+      background-attachment: fixed;
       height: 100vh;
       width: 100%;
       p {
@@ -343,6 +344,35 @@ body {
         height: 100vh;
         background: rgba(0, 0, 0, 0.51);
       }
+    }
+
+    .main-sections {
+      width: 100%;
+      display: grid;
+      align-content: center;
+      grid-template-columns: 1fr 1fr;
+      background-color: rgba(0, 0, 0, 0.815);
+    }
+    section {
+      background-color: rgba(0, 0, 0, 0.424);
+      margin-bottom: 0;
+    }
+    #section-aboutme {
+      grid-area: 1/1/2/2; //grid-row-start,column-start,row-end,column-end
+      p {
+        width: 85%;
+        margin: 0 auto;
+      }
+    }
+    #section-aboutme,
+    #section-skills {
+      display: block;
+      height: 100vh;
+    }
+    #section-projects {
+      height: 100vh;
+      flex-basis: 100%;
+      grid-column: span 2;
     }
   }
 }
