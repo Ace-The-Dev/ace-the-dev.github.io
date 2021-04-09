@@ -20,6 +20,9 @@ html {
   overflow-x: hidden;
   padding-bottom: 77px;
 }
+.banner-title-title {
+  display: none;
+}
 .banner-title-name {
   display: none;
 }
@@ -296,9 +299,12 @@ body {
   }
   body {
     background-blend-mode: soft-light;
-    .banner-title-name {
-      //display: initial;
+    .banner-title-title {
+      display: none;
       position: relative;
+    }
+    .banner-title-name {
+      display: none;
     }
     .intro {
       display: none;
