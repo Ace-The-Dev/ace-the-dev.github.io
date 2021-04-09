@@ -17,7 +17,7 @@ html {
   min-height: 100%;
 }
 #main {
-  overflow: auto;
+  overflow-x: hidden;
   padding-bottom: 77px;
 }
 .banner-title-name {
@@ -118,7 +118,6 @@ body {
   }
 
   #section-skills {
-    height: 50vh;
     p {
       font-size: 1.7rem;
     }
@@ -136,39 +135,42 @@ body {
       width: 100%;
       border-radius: 8px;
     }
-    .skill {
+    .skill-bar {
       background-color: $royal-blue;
-      color: white;
+      //color: white;
       padding: 1%;
       text-align: right;
       font-size: 0.6rem;
       height: 5px;
       border-radius: 8px;
-    }
-    .html {
-      width: 80%;
-    }
-    .css {
-      width: 90%;
-    }
-    .sass {
-      width: 75%;
-    }
-    .js {
-      width: 40%;
-    }
-    .git {
-      width: 60%;
-    }
-    .ajax {
-      width: 55%;
-    }
-    .php {
-      width: 50%;
-    }
-    span {
-      font-size: 1rem;
-      float: right;
+      position: relative;
+      width: 0;
+      transition: 1s linear;
+      &::before {
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background-color: $gold;
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        top: -30px;
+        right: 0;
+        transform: translateX(50%);
+        font-family: $lobster-Two;
+        font-weight: 500;
+        //float: right;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: $gold;
+        top: -13px;
+        right: 0;
+        border-radius: 2px;
+        transform: translateX(50%) rotate(45deg);
+      }
     }
   }
   #section-aboutme {
@@ -367,6 +369,7 @@ body {
     #section-aboutme,
     #section-skills {
       display: block;
+      /* i dont know if i'll be needing this for the mobile version height: 50vh;*/
       height: 100vh;
     }
     #section-projects {
