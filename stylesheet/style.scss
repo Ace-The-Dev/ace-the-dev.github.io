@@ -148,7 +148,7 @@ body {
       border-radius: 8px;
       position: relative;
       width: 0;
-      transition: 1s linear;
+      transition: 2s linear;
       &::before {
         content: attr(per);
         position: absolute;
